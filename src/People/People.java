@@ -57,11 +57,11 @@ public class People {
 		this.address = address;
 	}
 
-	public int getTelephone() {
+	public long getTelephone() {
 		return telephone;
 	}
 
-	public void setTelephone(int telephone) {
+	public void setTelephone(long telephone) {
 		this.telephone = telephone;
 	}
 

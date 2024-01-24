@@ -1,5 +1,7 @@
 package App;
 
+import java.util.Collections;
+
 import AllItems.TotalLibrary;
 import LibraryItems.Book;
 import LibraryItems.Item;
@@ -7,15 +9,11 @@ import LibraryItems.Map;
 import LibraryItems.Thesis;
 import People.Member;
 
-import java.util.Collections;
-
 public class App {
 
 	public static void main(String[] args) {
-		
-//		Member member1 = new Member("Tom", "Little", "1 Mousehold Lane, Squeaktown", 0758437484);
-				
-			
+
+		Member member1 = new Member("Tom", "Little", "1 Mousehold Lane, Squeaktown", 384499L);
 
 		Item book = new Book("The Chimp Paradox", "Steve Peters", 2012, false);
 		Item map = new Map("OS", "OS", 1999, "West Wales");
@@ -49,14 +47,12 @@ public class App {
 
 		System.out.println(library1);
 		System.out.println(book2.equals(book3));
-		
-		Collections.sort(library1.getItems());
 
-		System.out.println("Items sorted by title:");
-		System.out.println(library1);
-		
-		}
+		Collections.sort(library1);
 
+		System.out.println("Items sorted by title:" + library1);
+
+//		System.out.println(member1);
 
 	}
 

@@ -60,11 +60,22 @@ public class TotalLibrary {
 		items.remove(index);
 	}
 
+//	public boolean checkOut2(int id ) {
+//	
+//		for (Item item : items) {
+//			item.setBorrowed(false);
+//			return true;
+//			
+//		}
+//	}
+//	return false
+//	
+
 	@Override
 	public String toString() {
-		return "TotalLibrary [council=" + council + ", items=" + getItems() + ", borrowed=" + borrowed
-				+ ", getCouncil()=" + getCouncil() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ ", toString()=" + super.toString() + "]";
+		return "TotalLibrary [council=" + council + ", items=" + items + ", borrowed=" + borrowed + ", getCouncil()="
+				+ getCouncil() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
 	}
 
 }
